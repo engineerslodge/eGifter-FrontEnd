@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../../assets/libs/flatpickr/dist/flatpickr.min.css">
+    <!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+
+<!-- Favicon icon-->
+
+
+<!-- darkmode js -->
+<script src="../../assets/js/vendors/darkMode.js"></script>
+
+<!-- Libs CSS -->
+<link href="../../assets/fonts/feather/feather.css" rel="stylesheet" />
+<link href="../../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+<link href="../../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="../../assets/css/theme.min.css">
+
+    <link rel="canonical" href="vendor.html">
+    <title>E-Gift Card | Vendor</title>
+</head>
+
+
+    <body>
+        <!-- Wrapper -->
+        <div id="db-wrapper">
+            <!-- navbar vertical -->
+            <!-- Sidebar -->
+            <nav class="navbar-vertical navbar">
+                <div class="vh-100" data-simplebar>
+                    <!-- Brand logo -->
+                    <a class="navbar-brand" href="https://geeksui.codescandy.com/geeks/index.html">
+                        <h3 class="text-white">E-Gift Card</h3>
+                        <!-- <img src="https://geeksui.codescandy.com/geeks/assets/images/brand/logo/logo-inverse.svg" alt="Geeks" /> -->
+                    </a>
+                    <!-- Navbar nav -->
+                    <ul class="navbar-nav flex-column" id="sideNavbar text-white">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="admin-dashboard.html">
+                                <i class="nav-icon fe fe-home me-2"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="vendor.html">
+                                <i class="nav-icon fe fe-user me-2"></i>
+                                Vendor
+                            </a>
+                        </li>
+                       
+                         <!-- Nav item -->
+                         <li class="nav-item">
+                            <a
+                                class="nav-link text-white  collapsed "
+                                href="#"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navecommerce"
+                                aria-expanded="false"
+                                aria-controls="navecommerce">
+                                <i class="nav-icon fe fe-shopping-bag me-2"></i>
+                                Gift Card
+                            </a>
+                            <div id="navecommerce" class="collapse " data-bs-parent="#sideNavbar">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white " href="ecommerce/gift-card.html">Gift Card</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white " href="ecommerce/add-gift-card.html">Add Gift Card</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white " href="ecommerce/order.html">Order</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white " href="ecommerce/customers.html">Customer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white " href="ecommerce/customer-single.html">Customer Info</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>  
+            
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="transactions.html">
+                                <i class="nav-icon fe fe-database me-2"></i>
+                                Transactions
+                            </a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="settings.html">
+                                <i class="nav-icon fe fe-settings me-2"></i>
+                                Settings
+                            </a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <div class="nav-divider mt-5"></div>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="admin-sign-in.html">
+                                <i class="fe fe-power me-2"></i>
+                                Sign Out
+                            </a>
+                        </li>
+                      
+                    </ul>
+                    
+                </div>
+            </nav>
+
+            <!-- Page Content -->
+            <main id="page-content">
+                <div class="header">
+    <!-- navbar -->
+    <nav class="navbar-default navbar navbar-expand-lg">
+        <a id="nav-toggle" href="#">
+            <i class="fe fe-menu"></i>
+        </a>
+        <div class="ms-lg-3 d-none d-md-none d-lg-block">
+            <!-- Form -->
+            <form class="d-flex align-items-center">
+                <span class="position-absolute ps-3 search-icon">
+                    <i class="fe fe-search"></i>
+                </span>
+                <input type="search" class="form-control ps-6" placeholder="Search Entire Dashboard">
+            </form>
+        </div>
+        <!--Navbar nav -->
+        <div class="ms-auto d-flex">
+            
+            <ul class="navbar-nav navbar-right-wrap ms-2 d-flex nav-top-wrap">
+                <li class="dropdown stopevent">
+                    <a class="btn btn-light btn-icon rounded-circle indicator indicator-primary" href="#" role="button" id="dropdownNotification" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fe fe-bell"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg" aria-labelledby="dropdownNotification">
+                        <div>
+                            <div class="border-bottom px-3 pb-3 d-flex justify-content-between align-items-center">
+                                <span class="h4 mb-0">Notifications</span>
+                                <a href="notification-history.html">
+                                    <span class="align-middle">
+                                        <i class="fe fe-settings me-1"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            
+                            <!-- List group -->
+                            <ul class="list-group list-group-flush simplebar-scrollable-y" data-simplebar="init" style="max-height: 300px"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px;">
+                                <li class="list-group-item bg-transparent">
+                                    <div class="row">
+                                        <div class="alert alert-transparent alert-dismissible fade show col" role="alert">
+                                            <div class="d-flex">
+                                                <img src="../../assets/images/avatar/avatar-4.jpg" alt="" class="avatar-md rounded-circle">
+                                                <div class="ms-3">
+                                                    <h5 class="fw-bold mb-1">Sina Ray</h5>
+                                                    <p class="mb-3">You earn new certificate for complete the Javascript Beginner course.</p>
+                                                    <span class="fs-6">
+                                                        <span>
+                                                            <span class="fe fe-award text-warning me-1"></span>
+                                                            Oct 9,
+                                                        </span>
+                                                        <span class="ms-1">1:56 PM</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                          </div>
+                                    </div>
+                                </li>
+                               
+                                <li class="list-group-item bg-transparent">
+                                    <div class="row">
+                                        <div class="alert alert-transparent alert-dismissible fade show col" role="alert">
+                                            <div class="d-flex">
+                                                <img src="../../assets/images/avatar/avatar-4.jpg" alt="" class="avatar-md rounded-circle">
+                                                <div class="ms-3">
+                                                    <h5 class="fw-bold mb-1">Sina Ray</h5>
+                                                    <p class="mb-3">You earn new certificate for complete the Javascript Beginner course.</p>
+                                                    <span class="fs-6">
+                                                        <span>
+                                                            <span class="fe fe-award text-warning me-1"></span>
+                                                            Oct 9,
+                                                        </span>
+                                                        <span class="ms-1">1:56 PM</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                          </div>
+                                    </div>
+                                </li>
+
+                                
+                            </div></div></div></div><div class="simplebar-placeholder" style="width: 352px; height: 557px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 161px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></ul>
+                            <div class="border-top px-3 pt-3 pb-0">
+                                <a href="notification-history.html" class="text-link fw-semibold">See all Notifications</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- List -->
+                <li class="dropdown ms-2">
+                    <a class="rounded-circle" href="#" role="button" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="avatar avatar-md avatar-indicators avatar-online">
+                            <img alt="avatar" src="../../assets/images/avatar/avatar-1.jpg" class="rounded-circle">
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
+                        <div class="dropdown-item">
+                            <div class="d-flex">
+                                <div class="avatar avatar-md avatar-indicators avatar-online">
+                                    <img alt="avatar" src="../../assets/images/avatar/avatar-1.jpg" class="rounded-circle">
+                                </div>
+                                <div class="ms-3 lh-1">
+                                    <h5 class="mb-1">Admin</h5>
+                                    <p class="mb-0">admin@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <ul class="list-unstyled">
+                            
+                            <li>
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="fe fe-user me-2"></i>
+                                    Profile
+                                </a>
+                            </li>
+                           
+                            <li>
+                                <a class="dropdown-item" href="settings.html">
+                                    <i class="fe fe-settings me-2"></i>
+                                    Settings
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="dropdown-divider"></div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="dropdown-item" href="admin-sign-in.html">
+                                    <i class="fe fe-power me-2"></i>
+                                    Sign Out
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+                <!-- Container fluid -->
+                <section class="container-fluid p-4">
+                    <div class="row">
+                        <!-- Page Header -->
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center">
+                                <div class="mb-2 mb-lg-0">
+                                    <h1 class="mb-1 h2 fw-bold">
+                                        Vendors
+                                        <span class="fs-5">(4)</span>
+                                    </h1>
+                                   
+                                </div>
+                                <div class="nav btn-group" role="tablist">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
+                                        Add Vendor
+                                      </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalScrollableTitle">Add Vendor</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"></span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- Card -->
+  <div class="card ">
+    <!-- Card Header -->
+    <div class="card-header">
+      <h3 class="mb-0 ">Profile Details</h3>
+      <!-- <p class="mb-0 ">Vendor ontrol to manage your own account setting.</p> -->
+    </div>
+    <!-- Card Body -->
+    <div class="card-body">
+
+  <div>
+   
+    <form class="row">
+      <div class="mb-3 col-12 col-md-12">
+        <label class="form-label" for="profilefname">First Name</label>
+        <input type="text" id="profilefname" class="form-control" placeholder="First Name"
+          required>
+      </div>
+  <div class="mb-3 col-12 col-md-12">
+    <label class="form-label" for="profilelname">Last Name</label>
+    <input type="text" id="profilelname" class="form-control" placeholder="Last Name"
+      required>
+  </div>
+ <div class="mb-3 col-12 col-md-12">
+   <label class="form-label" for="profilephone">Phone</label>
+   <input type="number" id="profilephone" class="form-control" placeholder="Phone"
+     required>
+ </div>
+
+<div class="mb-3 col-12 col-md-12">
+<label class="form-label">Country</label>
+<select class="form-select" data-width="100%">
+  <option value="">Select Country</option>
+  <option value="1">India</option>
+  <option value="2">UK</option>
+  <option value="3">USA</option>
+  </select>
+</div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Create Profile</button>
+  </div>
+</form>
+   </div>
+ </div>
+ </div>
+     </div>
+    </div>
+</div>
+ </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <!-- Tab -->
+                            <div class="tab-content">
+                                <!-- Tab pane -->
+                                <div class="tab-pane fade show active" id="tabPaneGrid" role="tabpanel" aria-labelledby="tabPaneGrid">
+                                    <div class="mb-4">
+                                        <input type="search" class="form-control" placeholder="Search Vendor" >
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                            <!-- Card -->
+                                            <div class="card mb-4">
+                                                <!-- Card body -->
+                                                <div class="card-body">
+                                                    <div class="text-center">
+                                                        <img src="../../assets/images/avatar/avatar-2.jpg" class="rounded-circle avatar-xl mb-3" alt="" >
+                                                        <h4 class="mb-0">Wade Warren</h4>
+                                                        <p class="mb-0">Agent 1</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between border-bottom py-2 mt-4">
+                                                        <span>Customer</span>
+                                                        <span class="text-dark">54</span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between border-bottom py-2">
+                                                        <span>Total Product </span>
+                                                        <span class="text-dark"> 20 </span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between pt-2">
+                                                        <span> Product Sold</span>
+                                                        <span class="text-success">12</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                            <!-- Card -->
+                                            <div class="card mb-4">
+                                                <!-- Card body -->
+                                                <div class="card-body">
+                                                    <div class="text-center">
+                                                        <img src="../../assets/images/avatar/avatar-1.jpg" class="rounded-circle avatar-xl mb-3" alt="" >
+                                                        <h4 class="mb-0">John While</h4>
+                                                        <p class="mb-0">Agent 2</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between border-bottom py-2 mt-4">
+                                                        <span>Customer</span>
+                                                        <span class="text-dark">54</span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between border-bottom py-2">
+                                                        <span>Total Product </span>
+                                                        <span class="text-dark"> 50 </span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between pt-2">
+                                                        <span> Product Sold</span>
+                                                        <span class="text-success">42</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                            <!-- Card -->
+                                            <div class="card mb-4">
+                                                <!-- Card body -->
+                                                <div class="card-body">
+                                                    <div class="text-center">
+                                                        <img src="../../assets/images/avatar/avatar-6.jpg" class="rounded-circle avatar-xl mb-3" alt="" >
+                                                        <h4 class="mb-0">Wade </h4>
+                                                        <p class="mb-0">Agent 3</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between border-bottom py-2 mt-4">
+                                                        <span>Customer</span>
+                                                        <span class="text-dark">90</span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between border-bottom py-2">
+                                                        <span>Total Product </span>
+                                                        <span class="text-dark">52 </span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between pt-2">
+                                                        <span> Product Sold</span>
+                                                        <span class="text-success">42</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                            <!-- Card -->
+                                            <div class="card mb-4">
+                                                <!-- Card body -->
+                                                <div class="card-body">
+                                                    <div class="text-center">
+                                                        <img src="../../assets/images/avatar/avatar-4.jpg" class="rounded-circle avatar-xl mb-3" alt="" >
+                                                        <h4 class="mb-0">Bola Wale</h4>
+                                                        <p class="mb-0">Agent 4</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between border-bottom py-2 mt-4">
+                                                        <span>Customer</span>
+                                                        <span class="text-dark">84</span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between border-bottom py-2">
+                                                        <span>Total Product </span>
+                                                        <span class="text-dark"> 70 </span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between pt-2">
+                                                        <span> Product Sold</span>
+                                                        <span class="text-success">42</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Scripts -->
+        <!-- Libs JS -->
+<script src="../../assets/libs/%40popperjs/core/dist/umd/popper.min.js"></script>
+<script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../assets/libs/simplebar/dist/simplebar.min.js"></script>
+
+<!-- Theme JS -->
+<script src="../../assets/js/theme.min.js"></script>
+
+    </body>
+
+</html>
